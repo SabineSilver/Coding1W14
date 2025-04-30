@@ -1,4 +1,6 @@
 #include "filez.h"
+#include "ship.h"
+
 
 void WriteToFile(string givenString) {
 	//open (or create) the file
@@ -30,6 +32,41 @@ void ReadFromFile() {
 		cout << fileContents << "\n";
 	}
 	//close the file
+	file.close();
+
+}
+
+void WriteShipToFile(ship givenShip) {
+	 
+	ofstream file("shipfile.txt", ios::app);
+
+	if (!file.is_open()) {
+		cout << "Could not open file.\n";
+		return;
+	}
+	
+	file givenShip();		//idk why the << isn't working??? it's working on the other function. I think it's bc it's not a string or smthn but also what else am i supposed to use?
+	//I'm trying to make a like variable(?) if givenShip that includes the given ship's name, fuel, and type
+	// I don't remember how to do that though and I have to go to work until midnight in five minutes
+	//I need to somehow get the name fuel and type of a given ship into this file to be saved
+	// ship.name ship.fuel shipType
+	file.close();
+
+}
+
+void ReadFromShipFile() {
+	string fileContents;		
+
+	ifstream file("shipfile.txt");
+
+	if (!file.is_open()) {
+		cout << "Could not open file.\n";
+	}
+	
+	while (getline(file, fileContents)) {
+		cout << fileContents << "\n";
+	}
+	
 	file.close();
 
 }

@@ -21,6 +21,8 @@ int main()
 	minnow.type = CRUISER;
 	minnow.status();
 
+	WriteShipToFile(minnow);
+	ReadFromShipFile();
 
 	return 0;
 }

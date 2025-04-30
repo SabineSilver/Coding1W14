@@ -9,7 +9,7 @@ ship::ship() {
 }
 
 void ship::status() {
-	cout << "The doog ship " << name << " has " << fuel << "fuel.\n";
+	cout << "The good ship " << name << " has " << fuel << " fuel.\n";
 	cout << "The ship is a ";
 	switch (type) {
 	case FIGHTER: cout << "fighter.\n";
