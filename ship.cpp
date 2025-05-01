@@ -14,11 +14,11 @@ void ship::status() {
 	switch (type) {
 	case FIGHTER: cout << "fighter.\n";
 		break;
-	case FRIGATE: cout << "fighter.\n";
+	case FRIGATE: cout << "frigate.\n";
 		break;
-	case FREIGHTER: cout << "fighter.\n";
+	case FREIGHTER: cout << "freighter.\n";
 		break;
-	case CRUISER: cout << "fighter.\n";
+	case CRUISER: cout << "cruiser.\n";
 		break;
 	default: cout << "unknown.\n";
 		break;

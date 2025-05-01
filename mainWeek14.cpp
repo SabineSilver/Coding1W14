@@ -18,7 +18,7 @@ int main()
 	WriteToFile("\nWake up"); 
 
 	ship minnow;
-	minnow.type = CRUISER;
+	minnow.type = FRIGATE;
 	minnow.status();
 
 	WriteShipToFile(minnow);
